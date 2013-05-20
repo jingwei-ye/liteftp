@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALL_OBJS	makefile	/^ALL_OBJS = $(OBJS:%=%.o)$/;"	m
+AcceptTCPConnection	TCPServerUtility.c	/^int AcceptTCPConnection(int servSock) {$/;"	f
+BUFSIZE	TCPEchoServer4.c	/^static const int BUFSIZE= 1000;$/;"	v	file:
+DO_OBJS	makefile	/^DO_OBJS = gcc -c -o $@.o $@.c$/;"	m
+DieWithSystemMessage	DieWithMessage.c	/^void DieWithSystemMessage(const char *msg) {$/;"	f
+DieWithUserMessage	DieWithMessage.c	/^void DieWithUserMessage(const char *msg, const char *detail) {$/;"	f
+HandleTCPClient	TCPEchoServer4.c	/^void HandleTCPClient(int clntSock){$/;"	f
+MAXPENDING	TCPEchoServer4.c	/^static const int MAXPENDING = 5;$/;"	v	file:
+MAXPENDING	TCPServerUtility.c	/^static const int MAXPENDING = 5;$/;"	v	file:
+OBJS	makefile	/^OBJS = AddressUtility DieWithMessage   TCPClientUtility TCPServerUtility$/;"	m
+PRACTICAL_H_	Practical.h	/^#define PRACTICAL_H_$/;"	d
+PrintSocketAddress	AddressUtility.c	/^void PrintSocketAddress(const struct sockaddr *address, FILE *stream){$/;"	f
+SetupTCPClientSocket	TCPClientUtility.c	/^int SetupTCPClientSocket(const char * host, const char * service){$/;"	f
+SetupTCPServerSocket	TCPServerUtility.c	/^int SetupTCPServerSocket(const char *service){$/;"	f
+main	GetAddrInfo.c	/^int main(int argc, char ** argv){$/;"	f
+main	LiteFtp.c	/^int main(int argc,char ** argv){$/;"	f
+main	TCPEchoServer4.c	/^int main(int argc,char **argv){$/;"	f
+run	LiteFtp.c	/^void run(){$/;"	f

@@ -1,0 +1,31 @@
+#AddressUtility.c  DieWithMessage.c  GetAddrInfo.c     Practical.h       TCPEchoServer4.o  
+#AddressUtility.o  DieWithMessage.o  GetAddrInfo.o     TCPEchoServer4.c  makefile   
+#OBJS = 
+#EXEC = GetAddressInfo 
+#------ coustomer definitions
+
+OBJS = AddressUtility DieWithMessage 
+EXEC = TCPEchoServer4
+
+#------ constant definitions
+
+ALL_OBJ = $(OBJS:%=%.o)
+
+all: $(EXEC)
+
+clean:
+	$(RM) $(EXEC) $(OBJS) $(ALL_OBJ); make all
+say:
+	echo $(ALL_OBJ)
+
+DO_OBJS = gcc -c -o $@.o $@.c; touch $@
+DO_EXEC = gcc -s -o $@ $(ALL_OBJ)
+
+	#------ now compile
+
+$(OBJS):	$(@:%=%.o)
+	$(DO_OBJS)
+
+$(EXEC):	$(OBJS)
+	$(DO_EXEC)
+
